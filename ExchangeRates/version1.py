@@ -5,11 +5,20 @@ import requests
 Your_Api_Key = ""
 
 input_currency = input("Enter the currency you want to convert from: ").upper()
-original_amount_currency = float(input(f"Enter the amount of {input_currency} you wish to convert: "))
+while True:
+    try:
+        original_amount_currency = float(input(f"Enter the amount of {input_currency} you wish to convert: "))
+        if original_amount_currency > 0:
+            break
+        else:
+            print("The amount must be greater than 0!")
+    except ValueError:
+        print("Invalid amount. Please enter a valid number.")
+
 converted_currency = input("Enter the currency you want to convert to: ").upper()
 
 
-response = f"https://v6.exchangerate-api.com/v6/{Your_Api_Key}/latest/{input_currency}"
+response = f"{Url}/{Your_Api_Key}/latest/{input_currency}"
 data = requests.get(response).json()
 
 
