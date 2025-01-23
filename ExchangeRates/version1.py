@@ -3,6 +3,7 @@ import requests
 
 
 Your_Api_Key = ""
+Url = "https://v6.exchangerate-api.com/v6"
 
 input_currency = input("Enter the currency you want to convert from: ").upper()
 while True:
