@@ -2,7 +2,7 @@ import json
 import requests
 
 
-Your_Api_Key = ""
+Your_Api_Key = ""    #Your API Key: Get it from https://www.exchangerate-api.com/
 Url = "https://v6.exchangerate-api.com/v6"
 
 input_currency = input("Enter the currency you want to convert from: ").upper()
