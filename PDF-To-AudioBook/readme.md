@@ -1,4 +1,4 @@
-# PDF to an AudioBook
+# PDF to AudioBook
 
 This is a small program that converts a PDF into an AudioBook. It allows users to select a PDF file using a file dialog and reads its content aloud.
 
